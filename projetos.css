@@ -1,0 +1,149 @@
+.branco{
+  background-color: #111111;
+}
+.titulo{
+  color: rgba(255, 255, 255, 0.651);
+  margin: 0px 0px 50px 0px ;
+  font-size: 3.8rem;
+}
+.projetos2{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 70px;
+
+}
+.projetos2 img{
+  max-width: 100%;
+  
+}
+.projetos2 div{
+  background-color: #111111;
+  padding: 20px 20px;
+  border: 1px solid #fc9b0000;
+  transition: .5s;
+  border-width: 3px;
+  border-style: solid;
+  border-image: 
+    linear-gradient(
+      to bottom, 
+      rgba(255, 153, 0, 0), 
+      rgba(0, 0, 0, 0)
+    ) 1 100%;
+}
+.projetos2 div:hover{
+  transition: .5s;
+  border-width: 3px;
+  border-style: solid;
+  border-image: 
+    linear-gradient(
+      to bottom, 
+      #fc9b00, 
+      rgba(0, 0, 0, 0)
+    ) 1 100%;
+
+}
+img{
+  transition: .3s;
+}
+.projetos2 div:hover img{
+  transform: scale(1.01);
+}
+.projetos2 h1{
+  font-size: 1.5rem;
+  color: white;
+  padding: 20px 0px ;
+  position: relative;
+}
+.projetos2 h1::after{
+  content: "";
+  width: 20px;
+  height: 3px;
+  top: 10px;
+  left: 0px;
+  transition: .3s;
+  position: absolute;
+  background-color: #fc9b00;
+}
+.projetos2 div:hover h1::after{
+  width: 45px
+}
+
+.projetos2 a{
+  text-decoration: none;
+  color: white;
+}
+.projetos2 h2{
+  font-size: 0.99rem;
+  color: #ffffff;
+  position: relative;
+  
+}
+.projetos2 p{
+  line-height: 25px;
+  font-size: 1rem;
+  margin: 20px 0px;
+  color: rgb(155, 155, 155);
+  font-weight: 500;
+}
+.emproducao{
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+  border: 5px solid #ffffff07  ;
+  border-top: 5px solid #fc9b00;
+  animation: carrega 1.2s linear infinite forwards;
+}
+.projetos-tec{
+  display: flex;
+  list-style: none;
+  gap: 5px;
+}
+.projetos-tec i{
+  font-size: 20px;
+}
+
+.tec-projeto{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 5px;
+}
+.bxl-html5.i{
+  color: #E44D26;
+}
+.bxl-css3.i{
+  color: #006BC0;
+}
+.bxl-javascript.i{
+  color: #F7E018;
+}
+.bxl-react.i{
+  color: #61DBFB;
+}
+.bxl-bootstrap.i{
+  color: #7511F6;
+}
+
+@media(max-width: 1000px){
+  .projetos2{
+    grid-template-columns: 1fr 1fr;
+  }
+  .projetos2 div{
+    background-color: #2b2b2b81;
+    border: none;
+    border-radius: 5px;
+
+  }
+  .projetos2 div:hover{
+    border: none;
+  }
+}
+@media(max-width: 800px){
+  .projetos2{
+    grid-template-columns: 1fr;
+
+  }
+}
